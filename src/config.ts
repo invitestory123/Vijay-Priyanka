@@ -141,8 +141,8 @@ const config: InvitationConfig = {
     journey: "As they begin their beautiful journey of love, faith and togetherness",
   },
   hero: {
-    childhoodBride: "/images/frame-bride.jpg",
-    childhoodGroom: "/images/frame-groom.jpg",
+    childhoodBride: "/images/childhood-bride.jpg",
+    childhoodGroom: "/images/childhood-groom.jpg",
     portraitBride: "/images/portrait-bride.jpg",
     portraitGroom: "/images/portrait-groom.jpg",
     bodyBride: "/images/body-bride.png",
@@ -229,13 +229,12 @@ const config: InvitationConfig = {
     { src: "/images/gallery-6.jpg", alt: "United on Stage · Celebrating Togetherness" },
     { src: "/images/gallery-7.jpg", alt: "Blessed Rings · Symbols of an Eternal Covenant" },
     { src: "/images/gallery-8.jpg", alt: "Sweet Beginnings · With Pastoral Blessings" },
-    { src: "/images/gallery-9.jpg", alt: "With Beloved Parents · United in Love" },
   ],
   families: {
     groom: {
       label: "Groom's Family",
       title: "Miriyala Family",
-      photo: "/images/family-stage.jpg",
+      photo: "/images/family-groom.jpg",
       scripture: {
         verse: "“This is the LORD’s doing; It is marvelous in our eyes”",
         ref: "Psalm 118:23",
@@ -258,7 +257,7 @@ const config: InvitationConfig = {
     bride: {
       label: "Bride's Family",
       title: "Yarajarla Family",
-      photo: "/images/family-stage.jpg",
+      photo: "/images/family-bride.jpg",
       greeting: "Greetings to you in the name of our LORD and Saviour JESUS CHRIST",
       scripture: {
         verse: "“He who finds a wife finds what is good and receives favour from the LORD”",

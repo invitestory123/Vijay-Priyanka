@@ -5,8 +5,8 @@ import { Heart, Sparkles, BookOpen } from "lucide-react"
 
 /**
  * SECTION · Family & Wedding Invitations
- * Honoring the Miriyala & Yarajarla families, grandparents, parents,
- * scriptures and loved ones.
+ * Distinct cards for Miriyala Family & Yarajarla Family, each featuring
+ * their authentic family stage photograph, scripture, parents & inviters.
  */
 export default function Family() {
   const { groom, bride } = config.families
@@ -18,36 +18,27 @@ export default function Family() {
         title="Our Families Invite You"
       />
 
-      {/* Shared Family Portrait */}
-      <Reveal className="mb-14">
-        <div className="photo-frame mx-auto max-w-3xl overflow-hidden rounded-2xl bg-ivory/90 p-2 sm:p-3 shadow-md">
-          <div className="relative overflow-hidden rounded-xl">
-            <img
-              src="/images/family-stage.jpg"
-              alt="Vijay and Priyanka with Parents"
-              className="aspect-[16/10] w-full object-cover transition-transform duration-700 ease-out hover:scale-[1.03]"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent flex items-end p-5 sm:p-7">
-              <div className="text-ivory">
-                <p className="font-script text-2xl sm:text-3xl">United in Love & Prayer</p>
-                <p className="font-body text-[0.68rem] tracking-[0.25em] uppercase text-ivory/90">
-                  Vijay & Priyanka with Beloved Parents
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Reveal>
-
       {/* Dual Invitation Cards */}
       <div className="grid gap-8 lg:grid-cols-2">
         {/* Groom's Family Card · Miriyala Family */}
         <Reveal delay={0.1}>
-          <div className="photo-frame flex h-full flex-col justify-between rounded-2xl bg-ivory/85 p-7 sm:p-9 shadow-sm transition-transform duration-500 hover:-translate-y-1">
+          <div className="photo-frame flex h-full flex-col justify-between rounded-2xl bg-ivory/85 p-6 sm:p-8 shadow-sm transition-transform duration-500 hover:-translate-y-1">
             <div>
+              {/* Groom's Family Stage Photo */}
+              <div className="overflow-hidden rounded-xl mb-5 photo-frame !p-1.5 shadow-sm bg-ivory">
+                <img
+                  src={groom.photo}
+                  alt="Miriyala Family Stage Photo"
+                  className="aspect-[16/10] w-full object-cover rounded-lg transition-transform duration-700 ease-out hover:scale-[1.03]"
+                />
+                <p className="py-1 text-center font-body text-[0.62rem] uppercase tracking-[0.2em] text-muted-foreground font-medium">
+                  Vijay with Beloved Parents
+                </p>
+              </div>
+
               <div className="flex items-center justify-center gap-1.5 text-gold mb-2">
                 <BookOpen className="h-4 w-4" strokeWidth={1.5} />
-                <span className="font-body text-[0.62rem] uppercase tracking-[0.25em] font-medium text-gold">
+                <span className="font-body text-[0.62rem] uppercase tracking-[0.25em] font-semibold text-gold">
                   Holy Scripture
                 </span>
               </div>
@@ -75,7 +66,7 @@ export default function Family() {
                   <p className="font-serif text-base font-medium text-ink">
                     Mrs. Santha Kumari, Retd. H.M.
                   </p>
-                  <p className="mt-1 font-body text-[0.62rem] uppercase tracking-[0.2em] text-gold">
+                  <p className="mt-1 font-body text-[0.62rem] uppercase tracking-[0.2em] text-gold font-medium">
                     Paternal Grandparents
                   </p>
                 </div>
@@ -123,11 +114,23 @@ export default function Family() {
 
         {/* Bride's Family Card · Yarajarla Family */}
         <Reveal delay={0.2}>
-          <div className="photo-frame flex h-full flex-col justify-between rounded-2xl bg-ivory/85 p-7 sm:p-9 shadow-sm transition-transform duration-500 hover:-translate-y-1">
+          <div className="photo-frame flex h-full flex-col justify-between rounded-2xl bg-ivory/85 p-6 sm:p-8 shadow-sm transition-transform duration-500 hover:-translate-y-1">
             <div>
+              {/* Bride's Family Stage Photo */}
+              <div className="overflow-hidden rounded-xl mb-5 photo-frame !p-1.5 shadow-sm bg-ivory">
+                <img
+                  src={bride.photo}
+                  alt="Yarajarla Family Stage Photo"
+                  className="aspect-[16/10] w-full object-cover rounded-lg transition-transform duration-700 ease-out hover:scale-[1.03]"
+                />
+                <p className="py-1 text-center font-body text-[0.62rem] uppercase tracking-[0.2em] text-muted-foreground font-medium">
+                  Priyanka with Beloved Parents
+                </p>
+              </div>
+
               <div className="flex items-center justify-center gap-1.5 text-gold mb-2">
                 <Sparkles className="h-4 w-4" strokeWidth={1.5} />
-                <span className="font-body text-[0.62rem] uppercase tracking-[0.25em] font-medium text-gold">
+                <span className="font-body text-[0.62rem] uppercase tracking-[0.25em] font-semibold text-gold">
                   In Jesus&apos; Name
                 </span>
               </div>
@@ -155,7 +158,7 @@ export default function Family() {
                   <p className="font-serif text-lg font-medium text-ink">
                     Mr. Y. Babu Rao & Mrs. Y. Santhi
                   </p>
-                  <p className="mt-1 font-body text-[0.62rem] uppercase tracking-[0.2em] text-gold">
+                  <p className="mt-1 font-body text-[0.62rem] uppercase tracking-[0.2em] text-gold font-medium">
                     Parents of the Bride · Rajahmundry
                   </p>
                 </div>
